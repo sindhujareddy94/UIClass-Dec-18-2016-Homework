@@ -1,0 +1,23 @@
+1)	What is version control tool?
+Ans:  Version control is a system that records changes to a file or set pf files over time so that you can recall specific versions later. Version control is also known as revision control or source control.
+
+2)	What is repository?
+Ans: A repository is a central place in which an aggregation of data is kept and maintained in an organized way. A repository may be just the aggregation of data itself into some accessible place of storage or it may also imply some ability to selectively extract data.
+
+3)	Why do we need to use repository in software development?
+Ans: we use repository in software development because in any software project multiple people will write the code and make the changes to the code so to make sure everyone has the same code we need version control system and repository in software development.
+
+4)	What is GIT? 
+Ans: GIT is a version control tool which is used to manage code on the repository. GIT is used to change the code in github.
+
+5)	What is github?
+Ans: Github is a hosting server which stores the code. Github can have one or more repository’s. bitbucket and stash are similar to github not only those two we have more which are similar to github.
+
+6)	What are the differences between git and github?
+Ans: git is a version control tool and github is a repository. Git is the tool whereas github is a hosting service gor git repositories. There is no need of github to use git.
+
+7)	What is pull, push, commit in git?
+Ans: Pull is for downloading partial updates. Push is used for uploading the changes from local repository to remote repository that is push will update the changes to Github. Commit will upload the changes from file system to local repository.
+
+8)	What are merge conflicts?
+Ans: Merge is combining the written code of two or more persons. If two people modify the same line of code, then some manual overwriting of code is required to resolve it that is called merge conflicts.
