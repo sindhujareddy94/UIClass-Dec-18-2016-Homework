@@ -1,0 +1,44 @@
+1)	how to resolve merge conflicts?
+Merge conflicts may occur if competing changes are made to the same line of a file or when a file is deleted that another person is attempting to edit.
+To resolve merge conflicts
+•	Open terminal.
+•	Go to the local Git repository that has the merge conflict.
+•	Generate a list of the files affected by the merge conflict.
+•	Open the file in editor.
+•	Remove the <<<, HEAD part, === part, and numbers (unwanted code) lines
+•	Consolidate the code that is which code you want to have whether the code which is added by you or the code which is added by others.
+•	Make changes and save it.
+•	After removing the unwanted code; stage the changes  commit  push (before pushing the code pull the code so that it will update the latest changes into our local folder).
+
+2)	what is html? how to create a html document?
+HTML (hypertext markup language). Html is used to create electronic documents that are displayed on the World Wide Web. Each page contains a series of connections to their pages called hyperlinks. 
+Method for creating html document
+1.	Start Microsoft Word.
+2.	Create a new blank document.
+3.	On the file menu, click save as web page.
+4.	In the file name box, type the file name that you want for your document, and then click save. 
+
+3)	what is doctype?
+Doctype is an instruction that associates a particular SGML or XML document with a document type definition.
+4)	what is a tag and element in html?
+Tags are used to mark up the start and end of an HTML element. A start tag consists of an opening angle bracket followed by the element name, zero or more space separated attribute pairs and a closing angle bracket.
+An html element usually consists of a start tag and end tag, with the content inserted in between
+<tagname>content </tagname>. The html element is everything from the start tag to the end tag.
+
+5)	what is an attribute in html?
+An attribute in html is a modifier of an HTML element type. An attribute either modifies the default functionality of an element type or provides functionality to certain element types unable to function correctly without them. In html syntax, an attribute is added to an Html start tag.
+
+6)	create a simple html page? write code.
+<html>
+<head>
+<title> HTML PAGE </title>
+</head>
+
+<body>
+<h1> hi everyone </h1>
+<p> how are you. </p>
+<img src=”user.jpg”></img>
+</body>
+
+</html>
+
