@@ -1,0 +1,75 @@
+Steps in creating repo in github.com
+1.	Go to the main page of the repository on git hub.
+2.	Under the repository name click clone or download icon.
+3.	After clicking the clone or download repository you will get an https section copy that url.
+4.	In the source tree we should click new repository and then clone url.
+5.	Paste the url which you have copied and then change the current working directory to the location where you want the cloned directory to be created.
+6.	Press enter. 
+
+GitHub commands
+
+Clone:     
+Clone copies a git repository. If we want to collaborate with someone on a project, or want to get a copy of a project we will use clone. We will use the command clone with URL (git clone [url]) the url will the project url which we want to copy. By this the entire history of the project will be copied and we will have it locally, this will give you working directory of the main branch of the project so that we can see the code and start editing it.
+
+Init:       
+It initializes a directory as a Git repository. To create a repository from an existing directory of file, we can rum git init. After you input this command into the directory or repository then it accepts further git commands.
+
+Add:
+This adds the file contents to the index. Git add; this command will add all current changes to the next commit. Git add –p <file> this command will add some changes in the file to next commit. This does not add new files to the repository. Instead, it brings new files to git’s attention. After you add files, they are included in git’s snapshots of the repository.
+
+mv:       
+This command moves or renames a file, a directory, or a symlink.
+
+Reset:
+This command resets current HEAD to the specified state.
+
+Rm:
+This command removes files from the working tree and from the index.
+
+bisect:
+This command is to perform a binary search in the history to find a particular regression.
+
+Grep:
+This command will look for specified patterns in the tracked files in the work tree. Patterns are lists of one or more search expressions separated by newline characters. An empty string as search expression matches all lines.
+
+Log:
+This command will show commit logs.
+
+Show:
+This command will show various types of objects (blobs, trees, tags and commits).
+
+Status:
+It checks the status of your repository, it checks which files are inside the repository, it will see which changes are still need to committed and it will check which branch of the repository you are currently working on.
+
+Branch:
+This command list, create, or delete branches. This command will let you build a new branch, or timeline of commits, of changes and file additions that are completely your own. This command will help us on making changes on our own.
+
+Checkout:
+ This command switch branches or restore working tree files. This is a navigational command that lets you move to the repository you want to check.
+
+Commit:     
+It records changes to the repository. It is the git’s most important command. After you make any type of changes if you input this command the changes will be saved to the repository.  
+
+Diff:
+This command shows changes between the working tree and the index or a tree, changes between the index and a tree, changes between two trees.
+
+Merge:
+This command will join two or more development histories together. This can merge your changes back to the master branch, which is visible to all collaborators.
+
+Rebase:
+This command will reapply commits on top of another base tip. Forward-port local commits to the updated upstream head.
+
+tag:
+Create, list, delete or verify a tag object signed with GPG
+
+Fetch:  
+Download objects and refs from another repository.
+Fetch branches from one or more other repositories, along with the objects necessary to complete their histories. Remote-tracking branches are updated.
+
+Pull:
+This command will fetch from and integrate with another repository or a local branch. If you are working on your personal computer and you want the most up to date version of your repository to work with, you pull the changes from github to personal computer with this command. 
+
+Push:       
+It updates remote refs along with associated objects. If you are working on the personal computer and you want your commits to be visible online on github, you will use the push command to make your commits visible online on github.
+
+
