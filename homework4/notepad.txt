@@ -1,0 +1,119 @@
+1) how to create a list in html? orderlists and un orderlists
+
+ An ordered list starts with <ol> tag. Each list item starts with <li> tag.
+The list items will be marked with numbers by default.  The type attribute of the <ol> tag, defines the type of the list item marker i.e.; 
+type=”1” in this case the list items will be numbered with numbers which is default.
+type=“a” in this case the list items will be numbered with lowercase letters.
+type=”A” in this case the list items will be numbered with uppercase letters.
+type=”i” in this case the list items will be numbered with lowercase roman letters.
+type=”I” in this case the list items will be numbered with uppercase roman letters.
+ 
+Example code:
+
+<ol type=”A”>
+	<li>Red Rose</li>
+	<li>White Rose</li>
+	<li>Yellow Rose</li>
+	<li>Orange Rose</li>
+</ol>
+  in this case, the list items will be numbered in uppercase letters.
+List item starts with <li> tag in both ordered and unordered lists.
+An unordered list starts with the <ul> tag.  The list items will be marked with bullets by default. Un ordered html list use the CSS list-style-type property to define the style of the list item marker.
+disc  the list item marker will be a bullet
+circle  the list item marker will be a circle
+square  the list item marker will be a square
+none  the list item will not be market
+
+Example code:
+
+<ul style=”list-style-type: square”>
+	<li>Red Rose</li>
+	<li>White Rose</li>
+	<li>Yellow Rose</li>
+	<li>Orange Rose</li>
+</ul>
+
+2) how to include images in html
+
+•	In HTML, images are defined with the <img> tag.
+•	The <img> does not have a closing tag. <img> is empty.
+•	<img> tag contains attributes.
+•	In the <img> tag, src attribute specifies the URL of the image.
+•	The alt attribute provides an alternate text for an image. If a browser cannot find an image, it will display the value of the alt attribute. The alt attribute is required.
+•	Style attribute is used to specify the width and height of an image. Here the values are specified in pixels. Use px after the value.
+•	You can also use the width and height attributes. In these attributes the values are specified in pixels by default.
+•	We can store images in a subfolder. For this we need to include the folder name in the src attribute.
+•	To use an image as a link, simply nest the <img> tag inside the <a> tag
+•	The title attribute can be used to add an additional comment or information about the image.
+
+Example code:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Red Rose</h2>
+
+<img src="http://www.publicdomainpictures.net/pictures/30000/velka/red-rose-1347966359HaB.jpg" alt="Rose" style="width:200px;height:200px;" title="by XYZ"> 
+
+</body>
+</html>
+
+
+3) how to take user input in html?
+•	The HTML <form> element defines a form that is sued to collect user input.
+•	An HTML form contains form elements.
+•	<input> element is the most important form element.
+•	<input> element can be displayed in different ways; it has the type attribute.
+ <input type=”text”>  it defines a one-line text input field.
+ <input type=”radio”> it defines a radio button i.e.; for selecting one of many choices
+ <input type=”submit”> it defines a submit button i.e.; for submitting the form
+
+Example code:
+
+<form>
+First name : <br>
+<input type="text" name="firstname" value="Sin"><br>
+Last name : <br>
+<input type="text" name="lastname" value="Ch"><br><br>
+<input type="radio" name="gender" value="male" checked> Male<br>
+<input type="radio" name="gender" value="female"> Female<br>
+<input type="radio" name="gender" value="other"> Other<br>
+<input type="submit" value="Submit">
+
+
+</form>
+
+4) how to have links to different web pages and link to different part of same webpage?
+•	<a> element is used to define a link
+•	href attribute is used to define the link address
+•	target attribute is used to define where to open the linked document
+•	<img> element inside <a> is used to set image as a link
+•	id attribute is used to define bookmarks in a page
+•	href attribute (href=”#value”) to link to the bookmark
+ 
+Example code:
+ <a href=”https://github.com/”>visit this link to open github</a> 
+
+
+
+5) what is head, body, html element and why do we need them in the page?
+•	<head> element contains meta information about the document
+•	<body> element contains the visible page content. This element defines the document body. It has a start tag <body> and an end tag </body>.
+•	<html> element defines the whole document. It has start tag <html> and end tag </html>
+
+6) what are semantic element, describe about each one of them?
+•	Semantic elements are the elements with a meaning. These elements clearly describe the meaning of an element to both the browser and the developer.
+<article>  defines an article
+<aside>  defines content aside from the page content
+<details>  defines additional details that the user can view or hide.
+<figcaption>  defines a caption for a <figure> element.
+<figure>  specifies self contained content like photos code etc.
+<header>  specifies a header for a document
+<footer>  defines a footer for document
+<main>  specifies the main content of a document
+<nav>  defines navigation links
+<mark> defines marked text
+<section>  defines a section in a document.
+<time>  defines time
+<summary>  defines a visible heading for <details> element.
