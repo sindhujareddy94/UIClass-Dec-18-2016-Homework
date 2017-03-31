@@ -1,0 +1,174 @@
+
+1.	Explain all input types with examples?
+
+<input type=”text”> it defines a one-line text input field
+ Ex: 	<form>
+     		Name:<br>
+		<input type=”text” name=”name”><br>
+	</form>
+
+	<input type=”password”> it defines a password field
+	Ex:	<form>
+			Username:<br>
+			<input type=”text” name=”username”><br>
+			password: <br>
+			<input type=”password” name=”psw”>
+		</form>
+
+	<input type=”submit”> it defines a button for submitting form data to a form-handler. The form-handler is typically a server page with a script for processing input data. The form-handler is specified in the forms action attribute.
+Ex:	<form action="/action_page.php">
+ 	 First name:<br>
+  	<input type="text" name="firstname" value="Tom"><br>
+  	Last name:<br>
+  	<input type="text" name="lastname" value="Tim"><br><br>
+  	<input type="submit" value="Submit">
+</form>
+
+	<input type=”reset”> it defines a rest button that will reset all form values to their default values.
+Ex:	
+<form action="/action_page.php">
+ 	 First name:<br>
+  	<input type="text" name="firstname" value="Tom"><br>
+  	Last name:<br>
+  	<input type="text" name="lastname" value="Tim"><br><br>
+  	<input type="submit" value="Submit">
+<input type=”reset’>
+</form>
+	
+	<input type=”radio”> radio buttons let a user select only one of a limited number choices. Once selected it can be changed.
+Ex: 	<form>
+		 <input type="radio" name="gender" value="male" checked> Male<br>		 <input type="radio" name="gender" value="female"> Female<br>
+</form>
+
+<input type=”checkbox”> it defines a checkbox.
+This let a user select more options in the choices.
+Ex:	<form>
+ 	<input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+  	<input type="checkbox" name="vehicle2" value="Car"> I have a car 
+</form>
+
+<input type=”button” it defines a button
+Ex:  	<form>
+<input type=”button” onclick=”alert(‘hello world!’)” value=”click me!>
+		</form>
+
+2) explain all the input attributes?
+ 
+•	The value attribute specifies the initial value for an input field.
+•	The readonly attribute specifies that the input field is read only.
+•	The disabled attribute specifies that the input field is disabled.
+•	The size attribute specifies the size for the input field.
+•	The maxlength attribute specifies the maximum allowed length for the input field.
+
+3) what are sematic elements? 
+Semantic elements describes its meaning to both the browser and the developer.
+Examples of sematic elements are: <form>, <table>, <article>, <aside>, <details>, <figcaption>, <figure>, <footer>, <header>, <main>, <mark>, <nav>, <section>, <summary>, <time>.
+
+4) diff between article, section, div?
+	<article> this tag specifies independent, self-contained content. An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.
+	<section> this tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document.
+	<div> this tag defines a division in an html document.
+
+5) explain with exmaples about <article>, <aside>, <details>, <figcaption>, <figure>, <footer>, <header>, <main>, <mark>, <nav>, <section>, <summary>, <time>
+	<article> this tag specifies independent, self-contained content. An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.
+Ex:
+<article>
+  <h1>HTML</h1>
+  <p>HTML is the standard markup language for creating web pages and web applications.</p>
+</article>
+	<aside> this defines some content aside from the content it is placed in.
+Ex:
+<p>I love flowers</p>
+<aside>
+  <h4>flowers</h4>
+  <p>flowers refreshes everyone that is why I like them.</p>
+</aside>
+	<details> this specifies additional details that the user can view or hide on demand. This tag can be used to create an interactive widget that the user can open and close. Ny sort of content can be put inside this tag.
+Ex:
+<details>
+  <summary>Copyright 1999-2014.</summary>
+  <p> - by Refsnes Data. All Rights Reserved.</p>
+  <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+</details>
+	<figcaption> this defines a caption for a <figure> element. <figcaption> element can be placed as the first or last child of the <figure> element.
+Ex:
+<figure>
+  <img src="Red_Roses.jpg" alt="Red Roses" width="300" height="250">
+  <figcaption>Fig1. – beautiful Rose.</figcaption>
+</figure>
+
+<figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.While the content of the <figure> element is related to the main flow, its position is independent of the main flow, and if removed it should not affect the flow of the document.
+Ex:
+<figure>
+  <img src="Red_Roses.jpg" alt="Red Roses" width="300" height="250">
+</figure>
+	<footer> defines a footer for a docuent or section. This element should contain information about its containing element. A <footer> element typically contains:
+•	 authorship information
+•	copyright information
+•	contact information
+•	sitemap
+•	back to top links
+•	related documents
+You can have several <footer> elements in one document.
+Ex:
+<footer>
+  <p>Photography by: XYZ</p>
+  <p>Contact information: <a href="XYZ@example.com">
+  someone@example.com</a>.</p>
+</footer>
+<header> element represents a container for introductory content or a set of navigational links.
+A <header> element typically contains:
+•	one or more heading elements (<h1> - <h6>)
+•	logo or icon
+•	authorship information
+Ex:
+<article>
+  <header>
+    <h1>Main Heading</h1>
+    <h3>Heading</h3>
+    <p>Information</p>
+  </header>
+  <p>xyz....</p>
+</article>
+	<main> tag specifies the main content of a document.The content inside the <main> element should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms.
+Ex: 
+<main>
+<h1>Flowers</h1>
+<p>Rose, Sunflowers, Tulips, …</p>
+<article>
+<h1>Rose</h1>
+<p>A rose can be in many colors line red, orange, yellow.</p>
+</article>
+</main>
+	<mark> tag defines marked text. If we want ti highlight the text we can use this tag.
+Ex:
+<p>Do not forget this thing <mark>read</mark> 2nd pargraph.</p>
+
+	The <nav> tag defines a set of navigation links. not all links of a document should be inside a <nav> element. The <nav> element is intended only for major block of navigation links. Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content.
+Ex:
+<nav>
+  <a href="/html/">HTML</a> |
+  <a href="/css/">CSS</a> |
+  <a href="/js/">JavaScript</a> |
+  <a href="/jquery/">jQuery</a>
+</nav>
+	<section> tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document.
+Ex:
+<section>
+  <h1> HTML</h1>
+  <p>Hyper Text Markup Language is....</p>
+</section>
+	The <summary> tag defines a visible heading for the <details> element. The heading can be clicked to view/hide the details.
+Ex:
+<details>
+  <summary>Copyright 1999-2014.</summary>
+  <p> - by Refsnes Data. All Rights Reserved.</p>
+  <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+</details>
+	<time> tag defines a human-readable date/time. This element can also be used to encode dates and times in a machine-readable way so that user agents can offer to add birthday reminders or scheduled events to the user's calendar, and search engines can produce smarter search results.
+Ex:
+<p>We open at <time>10:00</time> every morning.</p>
+
+<p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
+
+
