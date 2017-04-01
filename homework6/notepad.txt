@@ -1,0 +1,66 @@
+1)	different types in css? 
+CSS comes in three types:
+External style sheet: in a separate file
+Internal style sheet: at the top of each web page document
+Inline style: right next to the text it decorates
+External style sheets are separate files full of CSS instructions (with the file extension .css). Internal style places at the top of each web page document, before any of the content is listed. Inline styles placed right where you need them, next to the text or graphic you wish to decorate. We can insert inline styles anywhere in the middle of your HTML code.
+2)	what is cascading in css?
+Cascading means that styles can fall (or cascade) from one style sheet to another, enabling multiple style sheets to be used on one HTML document.
+Even the simplest HTML document may have three or more style sheets associates with it including:
+The browsers style sheet – browsers apply style to sheets to all web documents. These style sheets vary from browser to browser but they have common characteristics such as black text, blue links, purple visited links etc. these are referred to as a default browser stylesheet.
+The users style sheet – A user is anyone who looks at your website. Most modern browsers allow users to set their own style sheets within their browser. These style sheets will override the browsers default style sheets for that user only.
+The authors style sheet -  the author is the person who develops the website. After applying a basic style sheet or an inline style to a page, you have added what is referred to as an author style sheet. Everything you do, from choosing fonts, colors and laying out pages in css is done using author style sheets.
+3)	why do we need to use css?
+CSS is an extremely powerful style sheet language which is used to control the look and feel of the content written in HTML.
+CSS provides efficiency in design and updates.
+CSS use can lead to faster page downloads.
+CSS is easy to work with
+4)	which type of css is a better practice?
+•	Make it readable
+•	Keep it consistent
+•	Start with a framework
+•	Use a reset
+•	Organize the stylesheet with a top-down structure
+•	Combine elements
+•	Create your html first
+•	Use multiple classes
+•	Use the right doctype
+•	Use shorthand
+•	Comment your CSS
+•	Understand the difference between block vs inline elements
+•	Alphabetize your properties
+•	Use CSS compressors
+•	Make use of generic classes
+•	Use”Margin: 0 auto” to center layouts
+•	Don’t just wrap a DIV around it
+•	Use firebug
+•	Hack less
+•	Use absolute positioning sparingly
+•	Use Text-transform
+•	Don’t use negative margins to hide your h1
+•	Validate your CSS and XHTML
+•	EMS vs. Pixels
+•	Don’t underestimate the list
+•	Avoid Extra Selectors
+•	Add margins and padding to all
+•	When Ready, try object oriented CSS
+•	Use Multiple Stylesheets
+•	Check for Closed Elements first when debugging.
+5)	what are selectors and why do we need them in css?
+A CSS selector is the part of a CSS rule set that actually selects the content you want to style.  There are different types of selectors
+Universal Selector
+Element type selector
+ID Selector
+Class Selector
+Descendant Selector
+Child Selector
+General Sibling Selector
+Adjacent Sibling Selector
+Attribute Selector
+Pseudo-class
+Pseudo-element
+Type selectors (e.g., h1) and pseudo-elements (e.g., :before).
+Class selectors (e.g., .example), attributes selectors (e.g., [type="radio"]) and pseudo-classes (e.g., :hover).
+ID selectors (e.g., #example).
+
+
