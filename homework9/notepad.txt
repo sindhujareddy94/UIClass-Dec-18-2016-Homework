@@ -1,0 +1,240 @@
+1)	what are media queries?
+
+Media query is a CSS technique which is introduced in CSS3. It uses the @media rule to include a block of CSS properties only if a certain condition is true.
+A media query consists of a media type and can contain one or more expressions, which resolve to either true or false.
+Syntax:
+@media not|only mediatype and (expressions)
+	CSS-Code;
+}
+Example:
+@media only screen and (max-width: 300px) {
+	body {
+		background-color: yellow;
+	}
+}
+in this case if the browser window is smaller than 300px, the background color will change to yellow color.
+Using media query we can add a breakpoint where certain parts of the design will behave differently on each side of the breakpoint.
+
+2)	In media queries what are following properties min-width, max-width, resolution, screen, print, speech, with examples
+Min-width is the the minimum resolution of the device, using dpi or dpcm.
+Max-width is the the maximum width of the display area, such as a browser window.
+The resolution media feature describes the resolution of the output device, i.e. the density of the pixels. When querying devices with non-square pixels, in ‘min-resolution’ queries the least-dense dimension must be compared to the specified value and in ‘max-resolution’ queries the most-dense dimensions must be compared instead. A ‘resolution’ (without a "min-" or "max-" prefix) query never matches a device with non-square pixels.
+For printers, this corresponds to the screening resolution (the resolution for printing dots of arbitrary color).
+The ‘dpi’ and ‘dpcm’ units describe the resolution of an output device, i.e., the density of device pixels. Resolution unit identifiers are:
+dpi
+dots per CSS ‘inch’
+dpcm
+dots per CSS ‘centimeter’
+In this specification, these units are only used in the ‘resolution’ media feature.
+Example:
+@media print and (min-resolution: 300dpi) { .. }
+This media query expresses that a style sheet is usable on devices with resolution greater than 300 dots per inch.
+print
+Matches printers, and devices intended to reproduce a printed display, such as a web browser showing a document in “Print Preview”.
+screen
+Matches all devices that aren’t matched by print or speech.
+speech
+Matches screen readers and similar devices that “read out” a page.
+
+3)	what are position property values in css (static, relative, absolute, fixed) explain differences?
+The position property specifies the type of positioning method used for an element (static, relative, absolute or fixed). The default value will be static.
+Syntax:
+Position: static|absolute|fixed|relative|relative|initial|inherit;
+Property Values:
+Static is the default value. Elements render in order, as they appear in the document flow.
+Absolute – the element is positioned relative to its first positioned (not static) ancestor element.
+Fixed – the element is positioned relative to the browser window.
+Relative – the element is positioned relative to its normal position, so “right:30px” adds 30pixels to the elements right position.
+Initial – sets this property to its default value.
+Inherit – inherits this property from its parent element.
+
+4)	what is a float and clear property in css?
+Clear property: 
+The clear property is used to control the behavior of floating elements.
+The clear CSS property specifies whether an element can be next to floating elements that precede it or must be moved down (cleared) below them. The clear property applies to both floating and non-floating elements.
+When applied to non-floating blocks, it moves the border edge of the element down until it is below the margin edge of all relevant floats. This movement (when it happens) causes margin collapsing not to occur.
+When applied to floating elements, it moves the margin edge of the element below the margin edge of all relevant floats. This affects the position of later floats, since later floats cannot be positioned higher than earlier ones.
+Syntax:
+Clear: none|left|right|both|initial|inherit;
+Property values:
+None – default. Allows floating elements on both sides.
+Left – no floating elements allowed on the left side.
+Right – no floating elements allowed on the right side.
+Both – no floating elements allowed on either the left or the right side.
+Initial – sets this property to its default value.
+Inherit – inherits this property from its parent element.
+Example:
+Div {
+	Clear: left:
+}
+Float property:
+The float property specifies whether or not an element should float.
+Syntax:
+Float: none|left|right|initial|inherit;
+Property values:
+None – the element is not floated, and will be displayed just where it occurs in the text. This is default
+Left – the elements floats to the left
+Right – the elements floats the right
+Initial – sets this property to its default value.
+Inherit – inherits this property from its parent element
+Example:
+Img {
+	Float: right;
+	Margin: 0 0 10px 10px;
+}
+
+
+
+5)	what is bootstrap grid system? rows and columns?
+Bootstraps grid system allows up to 12 columns across the page. If there is no need of 12 columns we can group the columns together to create wider columns.
+Bootstraps grid system is responsive, and the columns will re-arrange depending on the screen size: On a big screen it might look better with the content organized in three columns, but on a smalls screen it would be better if the content items were stacked on top of each other.
+Basic structure of a bootstrap grid:
+<div class="container">
+  <div class="row">
+    <div class="col-*-*"></div>
+  </div>
+  <div class="row">
+    <div class="col-*-*"></div>
+    <div class="col-*-*"></div>
+    <div class="col-*-*"></div>
+  </div>
+  <div class="row">
+    ...
+  </div>
+</div>
+
+6)	what are xs, sm, md, lg in bootstrap?
+The bootstrap grid system has four classes:
+xs – for phones
+sm – for tablets
+md – for desktops
+lg – for large desktops
+all these classes together create a more dynamic and flexible layout.
+
+7)	differences between container and container-fluid?
+We can turn fixed-width grid layout into a full-width layout by changing the outermost .container to .container-fluid.
+Container-fluid class
+This class makes the element take up the full with of the screen. Therefore, container-fluid is always equal to the width of the screen. For example, in a desktop browser, as the user reduces the size of the browser window the size of container-fluid is always changing to match it. In other words, container-fluid is always 100%
+Container class
+The container class have a fixed size for each screen resolution. Container class is centered on the screen.
+If the screen is at least 768px – it is 750px.
+If the screen is at least 992px –it is 970 px.
+If the screen is at least 1200px – it is 1170 px.
+
+8) what are the break points to be use in media queries for mobile, tablets, medium size desktops and large desktops?
+The @media query is 1/3 of the recipe for responsive design. It is the key ingredient that, in it’s simplest form, allows specified CSS to be applied depending on the device and whether it matches the media query criteria.
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Styles */
+}
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+
+
