@@ -1,0 +1,89 @@
+1)	display property values?
+The display property specifies the type of box used for an HTML element. 
+Syntax: display: value; 
+Property values: 
+Inline – default value. Displays an element as an inline element.
+Block - Displays an element as a block element.
+Flex – displays an element as an block-level flex container.
+inline-block – Displays an element as an inline-level block container. The inside of this block is formatted as block-level box, and the element itself is formatted as an inline-level box
+inline-flex – displays an element as an inline-level table
+inline-table - The element is displayed as an inline-level table
+list-item – let the element behave like a <li> element
+run-in – displays an element as either bloack or inline depending on context 
+table – element behave like a <table> element
+table-caption – element behave like a <caption> element
+table-column-group – element behave like a <colgroup> element
+table-header-group – element behave like a <thead> element
+table-footer-group – element behave like a <tfoot> element
+table-row-group – element behave like a <tbody> element
+table-cell – element behave like a <td> element
+table-column – element behave like a <col> element
+table-row – element behave like a <tr> element
+none – the element will not be displayed at all
+initial – sets this property to its default value.
+inherit – inherits this property from its parent element.
+
+Example:
+body {
+	display: inline;
+}
+	
+p{
+	display: inherit;
+}
+
+2)	display none and visibility hidden differences in css? when do you use either one of them?
+Display: none; is commonly used with javascript to hide and show elements without deleting and recreating them. 
+Hiding sn element can be done by setting the display property to none. The element will be hidden, and the page will be displayed as if the element is not there
+Example:
+Hi.hidden {
+	Display: none;
+}
+visibility:hidden; also hides an element. But, the element will still take up the same space as before. The element will be hidden, but still affect the layout
+Example:
+H1.hidden {
+	Visibility: hidden;
+}
+display- specifies how an element should be displayed
+visibility – specifies whether or not an element should be visible
+3)	css box model?
+All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout. The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.
+Content – the content of the box, where text and images appear
+Padding – clears an area around the content. The padding is transparent
+Border – A border that goes around the padding and content
+Margin – clears an area outside the border. The margin is transparent.
+Example:
+div {
+	width: 300px;
+	border: 25px solid green;
+	padding: 25px;
+	margin: 25px;
+}
+4)	box sizing in css?
+The box-sizing property is used to tell the browser what the sizing properties should include. Should they include the border-box? Or just the content-box
+Syntax:
+Box-sizing: content-box|border-box|initial|inherit;
+Property values
+Content-box – default. The width and height properties includes only the content. Border, padding, or margin are not included.
+Border-box – the width and height properties includes content, padding and border, but not the margin
+Initial – sets this property to its default value.
+Inherit – inherits this property from its parent element
+Example:
+div{
+	box-sizing: border-box;
+	width: 50%;
+	float: left;
+}
+
+5)	what SASS?
+SASS is an extension of CSS that adds power and elegance to the basic language. It allows you to use variables, nested rules, mixins, inline imports, and more, all with a fully CSS-compatible syntax. Sass helps keep large stylesheets well-organized, and get small stylesheets up and running quickly, particularly with the help of the Compass style library.
+
+6)	what is preprocessor? why do you need to use preprocessor?
+A preprocessor is a program that takes one type of data and converts it to another type of data. In the case of HTML and CSS, some of the more popular preprocessor languages include Haml and Sass. Haml is processed into HTML and Sass is processed into CSS.
+Reasons for using preprocessor are:
+It will save time
+It will make your code easier to maintain
+It will make CSS more organized
+It is easy to set up
+It will make website prettier 
+
