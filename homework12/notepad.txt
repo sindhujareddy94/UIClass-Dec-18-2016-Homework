@@ -1,0 +1,39 @@
+1)	what are the data types in java script?
+JavaScript provides different data types to hold different types of values. There are two types of data types in java script.
+1.	primitive data type
+2.	non-primitive (reference) data type.
+JavaScript is dynamic type language, that means there is no need to specify type of the variable because it is dynamically used by JavaScript engine. We need to use var here to specify the data type. It can hold any type of values such as numbers, strings etc.
+Example:
+var a=3;
+var b=”sid”
+string value should be given in double quotes.
+JavaScript primitive data types:
+There are 5 types of primitive data types in JavaScript
+String – it represents sequence of characters (“hello”)
+Number – it represents numeric values (100)
+Boolean – it represents Boolean value which is either true or false
+Undefined – it represents undefined value
+Null – it represents null that is no value at all
+JavaScript non-primitive data types:
+Object – represents instance through which we can access members
+Array – represents group of similar values
+RegExp – represents regular expression
+
+2)	what are the diff between java and JavaScript especially in terms of variables?
+The JavaScript programming language, developed by Netscape, Inc., is not part of the java platform. JavaScript does not create applets or stand-alone applications. JavaScript resides inside HTML documents, and can provide levels of interactivity to web pages that are not achievable with simple HTML.
+Key differences between Java and JavaScript:
+1.	java is an OOP programming language while JavaScript is an OOP scripting language.
+2.	Java creates applications that run in virtual machine or browser while JavaScript code is run on a browser only
+3.	Java code needs to be compiled while JavaScript code are all in text.
+4.	They require different plug-ins
+3)	why do we use JavaScript in web pages?
+JavaScript is present in most web pages today. Chances are that the page you are looking at right now contains the code for JavaScript. Try this activity: Right-click on a web page, then click 'View Source'. You should be able to find the word JavaScript somewhere in the code of the page. While HTML markup language allows web developers to format content, JavaScript allows them to make the page dynamic. For example, HTML allows for making text bold, creating text boxes, and creating buttons, whereas JavaScript allows for changing text on the page, creating pop-up messages, and validating text in text boxes to make sure required fields have been filled. JavaScript makes web pages more dynamic by allowing users to interact with web pages, click on elements, and change the pages.
+The purpose of JavaScript language, when used in web development, is to manipulate the web page elements and to make it dynamic. Imagine a web page that contains just text content. You can read it and you can even click on links to move to a next page, but your interaction with the page would be limited. What if you would like to click on a link or a button and hide a part of the page? Perhaps you would like to make an image move from one side of the page to another. JavaScript would allow you to do this
+
+4)	how to include JavaScript into webpages?
+To insert JavaScript into a webpage, we need to use the <script> tag. We should use the type attribute to specify the type of script being used, which in the case of JavaScript is text/javascript. 
+5) where to include java script in webpages and why?
+You can add a script anywhere inside the head or body sections of the document. But, to keep the document well structured there are some basic guidelines:
+•	most scripts can go inside the document head. This keeps them out of the way of the main document content.
+•	If your script needs to run at a certain stage during page layout, it should be put at the correct stage of the document, almost always somewhere inside the document body. If the script is very small, then put it all where it will be used. If it is larger, then put it all where it will be used. If it is larger, then put it inside the head inside a function, and you can then call that function when you need it.
+•	If the script is used on more than one page, or if it is of any significant size, then put it in its own file, and load it in the document head, not only will this help to keep the clutter of the document, but it will also help avoid potential syntax problems. As an extra benefit, these can be used by multiple pages, allowing browsers to use their cache, and saving bandwidth for you and your visitors.
