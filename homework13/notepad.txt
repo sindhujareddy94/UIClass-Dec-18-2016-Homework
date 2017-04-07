@@ -1,0 +1,123 @@
+1)	operational precedence?
+Operator precedence determines the order in which operators are evaluated. Operators with higher precedence are evaluated first.
+Example:
+3+5*5 // returns 28
+the multiplication operator has higher precedence than the addition operator and thus will be evaluated first.
+Associativity
+Associativity determines the order in which operators of the same precedence are processed. For example, a OP b OP c. left-associativity (left-to-right) means that it is processed as (a OP b) OP c, while right-associativity(right-to-left) means it is interpreted as a OP (b OP c). Assignment operators are right-associative, so you can write:
+a=b=3;
+here, a and b get the value 3. This is because the assignment operator returns the value that it assigned. First b is set to 3. Then a is also set to 3, the return value of b = 3, that is right operand of the assignment
+
+2)	truthy value and falsy value?
+In javascript, a truthy value is value that is considered true when evaluated in a Boolean context. All values are truthy unless they are defined as falsy (i.e, except for fa;se, 0, “”, null, undefined, and NaN)
+Javascript uses type coercion in Boolean contexts.
+Examples of truthy values in javascript
+•	if (true)
+•	if ({})
+•	if ([])
+•	if (42)
+•	if (“foo”)
+•	if (new Date())
+•	if (-42)
+•	if (3.14)
+•	if (-3.14)
+•	if (Infinity)
+•	if (-infinity)
+Falsy Value:
+A falsy value is a value that translates to false when evaluated in a Boolean context.
+Examples:
+•	if (false)
+•	if (null)
+•	if (undefined)
+•	if (0)
+•	if (NaN)
+•	if (‘’)
+•	if (“”)
+3)	logical and(&&), logical or(||)?
+Logical AND (&&):
+expr1 && expr2 – returns expr1 if it can be converted to false; otherwise returns expr2. Thus when used with Boolean values, && returns true if both operands are true: otherwise returns false.
+Logical OR (||):
+expr1 || expr2 – returns expr1 if it can be converted to true; otherwise, returns expr2. Thus, ehen used with Boolean values, || returns true if either operand is true
+4)	conditions in javascript? 
+In javascript we have the following conditional statements:
+•	use “if” to specify a block of code to be executed, if a specified condition is true
+•	use “else” to specify a block of code to be executed, if the same condition is false
+•	use “else if” to specify a new condition to test, if the first condition is false
+•	use “switch” to specify many alternative blocks of code to be executed.
+The if statement:
+Use the if statement to specify a block of javascript code to be executed if a condition is true.
+Syntax:
+If (condition) {
+	Block of code to be executed if the condition is true
+}
+The else statement:
+if (condition) {
+	block of code to be executed if the condition is true
+}
+else{
+	block of code to be executed if the condition is false
+}
+The else if statement
+Use the else if statement to specify a new condition if the first condition is false
+Syntax:
+If (condition1) {
+	Code to be executed if condition 1 is true
+}
+else if (condition2) {
+	code to be executed if the condition 1 is false and condition2 is true
+}
+else {
+	code to be executed if the condition1 is false and condition2 is false
+}
+
+5)	(post and pre) increment and (post and pre) decrement?
+Increment (++)
+The increment operator increments its operand and returns a value.
+•	If used postfix, with operator after operand(for example,  x++), then it returns the value before incrementing.
+•	If used prefix with operator before operand (for example, ++x), then it returns the value after incrementing
+Syntax:
+Operator; x++ or ++x
+Example:
+// Post fix
+      var x = 2;
+      y = x++; // y=2, x=3
+
+     // prefix
+     var x=2;
+      y = ++x; // y=3, x=3
+Decrement (--)
+The decrement operator decrements its operand and returns a value.
+•	If used postfix (for example, x--), then it returns the value before incrementing.
+•	If used prefix (--x) then it returns the value after decrementing.
+Syntax:
+Operator: x-- or --x
+Example:
+// postfix
+var x = 2;
+y = x--; // y=2 x = 1
+// prefix
+var x = 2;
+y = --x; // y=1 x=1
+
+
+6) loops (while, do while, for loop) 
+Loops can execute a block of code a number of times. Loops are handy, if you want to run the same code over and over again, each time with a different value.
+•	for – loops through a block of code a number of times
+•	for/in – loops through the properties of an object
+•	while – loops through a block of code while a specified condition is true
+•	do/while – also loops through a block of code while a specified condition is true.
+The for loop:
+The for loop is used when you want to create a loop
+Syntax:
+for (statement 1; statement 2; statement 3) {
+	code block to be executed
+}
+
+Statement 1 is executed before the loop starts
+Statement 2 defines the condition for running the loop
+Statement 3 is executed each time after the loop has been executed.
+Example:
+for (i = 0; i < 3; i++) {
+	text += “the number is “ + i + “<br>”;
+}
+
